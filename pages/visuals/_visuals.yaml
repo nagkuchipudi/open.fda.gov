@@ -1,0 +1,10 @@
+- title: "Drug Events By Year"
+  description: 'This is a great demonstration of how effective clincal trials are helping.'
+  width: 800
+  height: 400
+  url: "http://88135ec0.ngrok.io/#/visualize/edit/drug-events-per-year?embed&_g=()&_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),vis:(aggs:!((id:'1',params:(),schema:metric,type:count),(id:'2',params:(customInterval:'2h',extended_bounds:(),field:receivedate,interval:y,min_doc_count:1),schema:segment,type:date_histogram)),listeners:(),params:(addLegend:!t,addTimeMarker:!f,addTooltip:!t,defaultYExtents:!f,drawLinesBetweenPoints:!t,interpolate:linear,radiusRatio:9,scale:linear,setYExtents:!f,shareYAxis:!t,showCircles:!t,smoothLines:!f,times:!(),yAxis:()),type:line))"
+- title: "Food Recalls by State"
+  description: 'This is a great demonstration of how climatic conditions of a state is affecting food quality.'
+  width: 800
+  height: 400
+  url: "http://88135ec0.ngrok.io/#/visualize/edit/food-recall-state?embed&_g=()&_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),vis:(aggs:!((id:'1',params:(),schema:metric,type:count),(id:'2',params:(field:state.exact,order:desc,orderBy:'1',size:20),schema:segment,type:terms)),listeners:(),params:(addLegend:!t,addTimeMarker:!f,addTooltip:!t,defaultYExtents:!f,mode:stacked,scale:linear,setYExtents:!f,shareYAxis:!t,times:!(),yAxis:()),type:histogram))"

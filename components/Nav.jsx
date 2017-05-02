@@ -207,6 +207,18 @@ const Nav = (props: tPROPS) => {
               </div>
               <div className='dropdown' onMouseLeave={hideDropdownContent} onMouseEnter={showDropdownContent}>
                 <span
+                    title='Visualizations'
+                    className={activeDropdown=='Visualizations' ? 'menu-header emphasis': 'menu-header'}
+                    onTouchStart={toggleDropdownContent}
+                >Data Visualizations</span>
+                <div className={activeDropdown=='Visualizations' ? 'dropdown-content display-block': 'dropdown-content display-none'}>
+                  <div className='sub-menu-container' role='navigation'>
+                    <Link className={linkCx} to='/visuals/'>Data Visualizations</Link>
+                  </div>
+                </div>
+              </div>
+              <div className='dropdown' onMouseLeave={hideDropdownContent} onMouseEnter={showDropdownContent}>
+                <span
                   title='Community'
                   className={activeDropdown=='Community' ? 'menu-header emphasis': 'menu-header'}
                   onTouchStart={toggleDropdownContent}
